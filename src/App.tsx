@@ -1,6 +1,6 @@
-import HomePage from "./pages/Home"
+import HomePage from "@/pages/Home"
 
-import "./App.css";
+import "@/App.css";
 
 const App: React.FC<{}> = () => {
   return (
