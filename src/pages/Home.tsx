@@ -14,7 +14,7 @@ const HomePage: React.FC<{}> = () => {
 
                 </header>
                 <main>
-
+                    
                 </main>
             </section>
             <aside>
