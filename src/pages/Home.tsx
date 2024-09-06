@@ -1,28 +1,29 @@
 import { Fragment } from "react";
 
+import Navbar from "@/components/Navbar";
+import Main from "@/components/Main";
+import Gallery from "@/components/Gallery";
+import SEO from "@/components/SEO";
+import Footer from "@/components/Footer";
+
 const HomePage: React.FC<{}> = () => {
     return(
         <Fragment>
-            <nav>
-                
-            </nav>
-            <main>
+            <Navbar>
 
-            </main>
-            <section>
-                <header>
+            </Navbar>
+            <Main>
 
-                </header>
-                <main>
-                    
-                </main>
-            </section>
-            <aside>
+            </Main>
+            <Gallery>
 
-            </aside>
-            <footer>
+            </Gallery>
+            <SEO>
 
-            </footer>
+            </SEO>
+            <Footer>
+
+            </Footer>
         </Fragment>
     );
 }
