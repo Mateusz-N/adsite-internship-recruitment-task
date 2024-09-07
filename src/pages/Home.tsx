@@ -9,21 +9,11 @@ import Footer from "@/components/Footer";
 const HomePage: React.FC<{}> = () => {
     return(
         <Fragment>
-            <Navbar>
-
-            </Navbar>
-            <Main>
-
-            </Main>
-            <Gallery>
-
-            </Gallery>
-            <SEO>
-
-            </SEO>
-            <Footer>
-
-            </Footer>
+            <Navbar/>
+            <Main/>
+            <Gallery/>
+            <SEO/>
+            <Footer/>
         </Fragment>
     );
 }
