@@ -11,6 +11,13 @@ module.exports = {
       },
       width: {
         "container-width": "83.3%"
+      },
+      spacing: {
+        "buttons-padding-tb": "12px",
+        "buttons-padding-lr": "24px"
+      },
+      borderRadius: {
+        "buttons-radius": "8px"
       }
     },
   },

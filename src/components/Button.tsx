@@ -5,7 +5,9 @@ export interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({className, children}) => {
     return(
-        <button className = {className}>{children}</button>
+        <button className = {
+            `${className} py-buttons-padding-tb px-buttons-padding-lr rounded-buttons-radius`
+        }>{children}</button>
     );
 }
 
