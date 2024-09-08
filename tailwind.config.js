@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#F7F7F7",
+        "primary-light": "#F7F7F7",
+        "primary-dark": "#282828",
         "secondary": "#0147FF"
       },
       width: {
@@ -18,6 +19,14 @@ module.exports = {
       },
       borderRadius: {
         "buttons-radius": "8px"
+      },
+      fontFamily: {
+        "primary": "Roboto Condensed",
+        "buttons": "Roboto Flex",
+        "headers": "Bebas Neue"
+      },
+      letterSpacing: {
+        "buttons": "-0.02em"
       }
     },
   },
