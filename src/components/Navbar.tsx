@@ -1,5 +1,6 @@
 import img_logo from "@/resources/logo.png";
-import ButtonPrimary from "./ButtonPrimary";
+
+import ButtonPrimary from "@/components/ButtonPrimary";
 
 const Navbar: React.FC<{}> = () => {
     return(

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+  mode: 'jit',
+  purge: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
@@ -20,13 +21,18 @@ module.exports = {
       borderRadius: {
         "buttons-radius": "8px"
       },
+      borderWidth: {
+        "buttons-secondary": "1px"
+      },
       fontFamily: {
         "primary": "Roboto Condensed",
         "buttons": "Roboto Flex",
         "headers": "Bebas Neue"
       },
       letterSpacing: {
-        "buttons": "-0.02em"
+        "buttons": "-0.02em",
+        "h1": "-0.04em",
+        "h3": "-0.03em"
       }
     },
   },
