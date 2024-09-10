@@ -1,12 +1,6 @@
 const Gallery: React.FC<{}> = () => {
     return(
-        <section>
-            <header>
-
-            </header>
-            <main>
-                
-            </main>
+        <section className = "w-full h-auto py-20 bg-primary-light">
         </section>
     );
 }

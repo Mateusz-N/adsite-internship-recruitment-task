@@ -12,7 +12,8 @@ module.exports = {
         "secondary": "#0147FF"
       },
       width: {
-        "container-width": "83.3%"
+        "container-width": "83.33%",
+        "gallery": "87.77%"
       },
       spacing: {
         "buttons-padding-tb": "12px",
@@ -28,6 +29,9 @@ module.exports = {
         "primary": "Roboto Condensed",
         "buttons": "Roboto Flex",
         "headers": "Bebas Neue"
+      },
+      fontSize: {
+        "gallery-buttons": "15px"
       },
       letterSpacing: {
         "buttons": "-0.02em",
