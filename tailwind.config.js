@@ -13,7 +13,8 @@ module.exports = {
       },
       width: {
         "container-width": "83.33%",
-        "gallery": "87.77%"
+        "gallery": "87.77%",
+        "seo-article": "576px"
       },
       spacing: {
         "buttons-padding-tb": "12px",
@@ -23,7 +24,8 @@ module.exports = {
         "buttons-radius": "8px"
       },
       borderWidth: {
-        "buttons-secondary": "1px"
+        "buttons-secondary": "1px",
+        "expand-button": "1.5px"
       },
       fontFamily: {
         "primary": "Roboto Condensed",
@@ -31,7 +33,9 @@ module.exports = {
         "headers": "Bebas Neue"
       },
       fontSize: {
-        "gallery-buttons": "15px"
+        "gallery-buttons": "15px",
+        "seo-header": "25px",
+        "seo-paragraph": "14px"
       },
       letterSpacing: {
         "buttons": "-0.02em",
