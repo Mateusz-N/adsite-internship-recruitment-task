@@ -33,15 +33,28 @@ module.exports = {
         "headers": "Bebas Neue"
       },
       fontSize: {
-        "gallery-buttons": "15px",
-        "seo-header": "25px",
-        "seo-paragraph": "14px"
+        "h1": "4.77rem",
+        "h1-md": "4rem",
+        "h1-sm": "3rem",
+        "gallery-buttons": "0.94rem",
+        "seo-header": "1.56rem",
+        "seo-paragraph": "0.88rem"
+      },
+      lineHeight: { 
+        "h1": "1.1"
       },
       letterSpacing: {
         "buttons": "-0.02em",
         "h1": "-0.04em",
         "h3": "-0.03em"
       }
+    },
+    screens: {
+      xs: "419px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px"
     },
   },
   plugins: [],

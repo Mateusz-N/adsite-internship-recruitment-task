@@ -6,7 +6,7 @@ import NavigationDot from "@/components/NavigationDot";
 
 const Gallery: React.FC<{}> = () => {
     return(
-        <section className = "w-full h-auto py-20 flex flex-col gap-12 bg-primary-light overflow-hidden">
+        <section className = "w-full h-auto py-20 flex flex-col flex-auto gap-12 bg-primary-light overflow-hidden">
             <section className = "w-gallery mx-auto flex gap-16">
                 <img src = {img_gallery1} alt = ""/>
                 <img src = {img_gallery2} alt = ""/>

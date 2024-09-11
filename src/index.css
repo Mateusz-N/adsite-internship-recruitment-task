@@ -11,7 +11,7 @@ body {
 }
 
 #root {
-    @apply flex flex-col flex-1;
+    @apply flex flex-col flex-1 overflow-hidden;
 }
 
 #root > header, #root > footer {
