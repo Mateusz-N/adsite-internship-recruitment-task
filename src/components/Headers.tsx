@@ -1,4 +1,19 @@
+import {useState} from "react";
+
+import Tab from "@/components/Tab";
+
 const Headers: React.FC<{}> = () => {
+    const tabs = [
+        {name: "cars", label: "Samochody osobowe"},
+        {name: "vans", label: "Samochody dostawcze"},
+    ];
+    
+    const [activeTab, setActiveTab] = useState<string>("cars");
+
+    const handleTabChange = (tabName: string): void => {
+        setActiveTab(tabName);
+    }
+
     return(
         <section className = "w-full h-auto pt-20 bg-primary-light" id = "galleryHeaders">
             <section className = "w-gallery mx-auto flex flex-col gap-6">
@@ -8,10 +23,11 @@ const Headers: React.FC<{}> = () => {
                 </header>
                 <nav>
                     <ul className = "flex gap-12 font-buttons">
-                        <li className = "text-gallery-buttons tracking-buttons font-semibold text-secondary border-b-buttons-secondary border-secondary">
-                            Samochody osobowe
-                        </li>
-                        <li className = "text-gallery-buttons tracking-buttons text-black">Samochody dostawcze</li>
+                        {
+                            tabs.map(tab => (
+                                <Tab active = {activeTab === tab.name} onTabChange = {() => handleTabChange(tab.name)} key = {tab.name}>{tab.label}</Tab>
+                            ))
+                        }
                     </ul>
                 </nav>
             </section>
