@@ -1,8 +1,8 @@
 import img_decorativeLines from "@/resources/lines.png";
 import img_cars from "@/resources/main.png";
 
-import ButtonPrimary from "@/components/ButtonPrimary";
-import ButtonSecondary from "@/components/ButtonSecondary";
+import LinkButtonPrimary from "@/components/LinkButtonPrimary";
+import LinkButtonSecondary from "@/components/LinkButtonSecondary";
 
 const Main: React.FC<{}> = () => {
     return(
@@ -14,8 +14,8 @@ const Main: React.FC<{}> = () => {
                     <p>Kup komfortowy pojazd, aby każda podróż<br/>była wyjątkowym przeżyciem.</p>
                 </section>
                 <section className = "flex gap-x-6">
-                    <ButtonPrimary>Zobacz zdjęcia</ButtonPrimary>
-                    <ButtonSecondary>Zadzwoń do nas</ButtonSecondary>
+                    <LinkButtonPrimary to = "#galleryHeaders">Zobacz zdjęcia</LinkButtonPrimary>
+                    <LinkButtonSecondary to = "https://www.example.com/">Zadzwoń do nas</LinkButtonSecondary>
                 </section>
             </section>
             <img src = {img_cars} alt = "" className = "absolute top-[220px] xs:top-[180px] sm:top-[420px] md:top-[400px] lg:top-[360px] xl:top-[328px] right-0 w-2/5 sm:w-3/5 md:w-2/3 lg:w-3/4 xl:w-full max-w-[1064px]" />

@@ -1,17 +1,20 @@
+import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
+
 import img_logo from "@/resources/logo.png";
 
-import ButtonPrimary from "@/components/ButtonPrimary";
+import LinkButtonPrimary from "@/components/LinkButtonPrimary";
 
 const Navbar: React.FC<{}> = () => {
     return(
         <nav className = "w-full h-auto bg-primary-light py-4">
             <section className = "w-container-width h-auto mx-auto flex flex-wrap flex-col md:flex-row gap-2.5 justify-between items-center relative z-10">
-                <img src = {img_logo} alt = "CarsSpot logo" />
+                <Link to = "/"><img src = {img_logo} alt = "CarsSpot logo" /></Link>
                 <ul className = "flex gap-x-6 md:gap-x-24 font-buttons">
-                    <li>Galeria zdjęć</li>
-                    <li>FaQ</li>
+                    <li><HashLink smooth to = "/#galleryHeaders">Galeria zdjęć</HashLink></li>
+                    <li><Link to = "https://www.example.com/">FaQ</Link></li>
                 </ul>
-                <ButtonPrimary>Zadzwoń do nas</ButtonPrimary>
+                <LinkButtonPrimary to = "https://www.example.com/">Zadzwoń do nas</LinkButtonPrimary>
             </section>
         </nav>
     );

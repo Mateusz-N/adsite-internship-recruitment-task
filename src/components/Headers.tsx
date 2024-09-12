@@ -1,6 +1,6 @@
 const Headers: React.FC<{}> = () => {
     return(
-        <section className = "w-full h-auto pt-20 bg-primary-light">
+        <section className = "w-full h-auto pt-20 bg-primary-light" id = "galleryHeaders">
             <section className = "w-gallery mx-auto flex flex-col gap-6">
                 <header>
                     <p className = "text-secondary text-[21.5px] leading-[32.25px]">Prezentacja firmy</p>
