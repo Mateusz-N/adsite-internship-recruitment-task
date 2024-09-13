@@ -9,7 +9,6 @@ interface HeadersProps {
 }
 
 const Headers: React.FC<HeadersProps> = ({tabs, activeTab, onTabChange}) => {
-
     return(
         <section className = "w-full h-auto pt-20 bg-primary-light" id = "galleryHeaders">
             <section className = "w-gallery mx-auto flex flex-col gap-6">
