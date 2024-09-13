@@ -1,11 +1,12 @@
 export interface NavigationDotProps {
-    active?: boolean
+    active?: boolean,
+    onClick: () => void
 }
 
-const NavigationDot: React.FC<NavigationDotProps> = ({active = false}) => {
+const NavigationDot: React.FC<NavigationDotProps> = ({active = false, onClick}) => {
 
     return(
-        <svg width = "8" height = "8" viewBox = "0 0 8 8" fill = "none" xmlns = "http://www.w3.org/2000/svg">
+        <svg width = "8" height = "8" viewBox = "0 0 8 8" fill = "none" xmlns = "http://www.w3.org/2000/svg" onClick = {onClick} className = "cursor-pointer">
             <path
                 fillRule = "evenodd"
                 clipRule = "evenodd"

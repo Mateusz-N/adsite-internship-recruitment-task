@@ -1,10 +1,10 @@
-export interface TabProps {
+export interface NavigationTabProps {
     active: boolean,
     children: React.ReactNode,
     onTabChange: () => void
 }
 
-const Tab: React.FC<TabProps> = ({active, children, onTabChange}) => {
+const NavigationTab: React.FC<NavigationTabProps> = ({active, children, onTabChange}) => {
     return(
         <li>
             <button
@@ -22,4 +22,4 @@ const Tab: React.FC<TabProps> = ({active, children, onTabChange}) => {
     );
 }
 
-export default Tab;
+export default NavigationTab;

@@ -1,18 +1,14 @@
-import {useState} from "react";
+import {Tab} from "@/components/Gallery";
 
-import Tab from "@/components/Tab";
+import NavigationTab from "@/components/NavigationTab";
 
-const Headers: React.FC<{}> = () => {
-    const tabs = [
-        {name: "cars", label: "Samochody osobowe"},
-        {name: "vans", label: "Samochody dostawcze"},
-    ];
-    
-    const [activeTab, setActiveTab] = useState<string>("cars");
+interface HeadersProps {
+    tabs: Tab[],
+    activeTab: Tab,
+    onTabChange: (tab: Tab) => void
+}
 
-    const handleTabChange = (tabName: string): void => {
-        setActiveTab(tabName);
-    }
+const Headers: React.FC<HeadersProps> = ({tabs, activeTab, onTabChange}) => {
 
     return(
         <section className = "w-full h-auto pt-20 bg-primary-light" id = "galleryHeaders">
@@ -25,7 +21,7 @@ const Headers: React.FC<{}> = () => {
                     <ul className = "flex gap-12 font-buttons">
                         {
                             tabs.map(tab => (
-                                <Tab active = {activeTab === tab.name} onTabChange = {() => handleTabChange(tab.name)} key = {tab.name}>{tab.label}</Tab>
+                                <NavigationTab active = {activeTab.name === tab.name} onTabChange = {() => onTabChange(tab)} key = {tab.name}>{tab.label}</NavigationTab>
                             ))
                         }
                     </ul>

@@ -1,24 +1,34 @@
-import img_gallery1 from "@/resources/gallery1.png";
-import img_gallery2 from "@/resources/gallery2.png";
-import img_gallery3 from "@/resources/gallery3.png";
+import {useState} from "react";
 
-import NavigationDot from "@/components/NavigationDot";
+import img_carsGallery1 from "@/resources/gallery1.png";
+import img_carsGallery2 from "@/resources/gallery2.png";
+import img_carsGallery3 from "@/resources/gallery3.png";
+
+import Carousel from "@/components/Carousel";
+import Headers from "@/components/Headers";
+
+export interface Tab {
+    name: string,
+    label: string,
+    images: string[]
+}
 
 const Gallery: React.FC<{}> = () => {
+    const tabs = [
+        {name: "cars", label: "Samochody osobowe", images: [img_carsGallery1, img_carsGallery2, img_carsGallery3]},
+        {name: "vans", label: "Samochody dostawcze", images: []},
+    ];
+    
+    const [activeTab, setActiveTab] = useState<Tab>(tabs[0]);
+
+    const handleTabChange = (tab: Tab): void => {
+        setActiveTab(tab);
+    }
+    
     return(
-        <section className = "w-full h-auto py-20 flex flex-col flex-auto gap-12 bg-primary-light overflow-hidden">
-            <section className = "w-gallery mx-auto flex gap-16">
-                <img src = {img_gallery1} alt = ""/>
-                <img src = {img_gallery2} alt = ""/>
-                <img src = {img_gallery3} alt = ""/>
-            </section>
-            <nav className = "mx-auto py-2 flex gap-[10px]">
-                <NavigationDot active = {true}/>
-                <NavigationDot/>
-                <NavigationDot/>
-                <NavigationDot/>
-                <NavigationDot/>
-            </nav>
+        <section>
+            <Headers tabs = {tabs} activeTab = {activeTab} onTabChange = {handleTabChange}/>
+            <Carousel images = {activeTab.images}/>
         </section>
     );
 }
