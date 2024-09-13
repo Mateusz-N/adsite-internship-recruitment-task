@@ -12,6 +12,7 @@ const Button: React.FC<ButtonProps> = ({className, children}) => {
             rounded-buttons-radius
             font-buttons
             font-semibold
+            text-buttons
             tracking-buttons
             leading-normal
         `}>{children}</button>

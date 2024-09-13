@@ -17,11 +17,11 @@ module.exports = {
         "seo-article": "576px"
       },
       spacing: {
-        "buttons-padding-tb": "12px",
-        "buttons-padding-lr": "24px"
+        "buttons-padding-tb": "0.75rem",
+        "buttons-padding-lr": "1.5rem"
       },
       borderRadius: {
-        "buttons-radius": "8px"
+        "buttons-radius": "0.5rem"
       },
       borderWidth: {
         "buttons-secondary": "1px",
@@ -36,7 +36,7 @@ module.exports = {
         "h1": "4.77rem",
         "h1-md": "4rem",
         "h1-sm": "3rem",
-        "gallery-buttons": "0.94rem",
+        "buttons": "0.94rem",
         "seo-header": "1.56rem",
         "seo-paragraph": "0.88rem"
       },

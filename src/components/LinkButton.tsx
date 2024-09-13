@@ -15,6 +15,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({className, to, children}) => {
             rounded-buttons-radius
             font-buttons
             font-semibold
+            text-buttons
             tracking-buttons
             leading-normal
         `}>{children}</HashLink>
