@@ -9,7 +9,8 @@ const NavigationTab: React.FC<NavigationTabProps> = ({active, children, onTabCha
         <li>
             <button
                 className = {`
-                    text-gallery-buttons
+                    text-buttons
+                    leading-normal
                     tracking-buttons
                     cursor-pointer
                     ${active ? "font-semibold text-secondary border-b-buttons-secondary border-secondary" : "text-black"}

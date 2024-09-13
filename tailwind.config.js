@@ -13,7 +13,7 @@ module.exports = {
       },
       width: {
         "container-width": "83.33%",
-        "gallery": "87.77%",
+        "gallery": "87.78%",
         "seo-article": "576px"
       },
       spacing: {
