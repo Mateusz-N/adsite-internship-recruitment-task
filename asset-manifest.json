@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/adsite-internship-recruitment-task/static/css/main.37ec51d5.css",
-    "main.js": "/adsite-internship-recruitment-task/static/js/main.479f6e5d.js",
-    "static/js/488.778e2da9.chunk.js": "/adsite-internship-recruitment-task/static/js/488.778e2da9.chunk.js",
-    "static/media/main.png": "/adsite-internship-recruitment-task/static/media/main.c6aa481ac42751a1d1d0.png",
-    "static/media/gallery1.png": "/adsite-internship-recruitment-task/static/media/gallery1.b933f3e132dcc16a48e7.png",
-    "static/media/gallery2.png": "/adsite-internship-recruitment-task/static/media/gallery2.74c86e009a2a937ae8eb.png",
-    "static/media/gallery3.png": "/adsite-internship-recruitment-task/static/media/gallery3.0ab619de66eeb8da913a.png",
-    "static/media/lines.png": "/adsite-internship-recruitment-task/static/media/lines.273cce9ae51c91a4a58a.png",
-    "index.html": "/adsite-internship-recruitment-task/index.html",
-    "main.37ec51d5.css.map": "/adsite-internship-recruitment-task/static/css/main.37ec51d5.css.map",
-    "main.479f6e5d.js.map": "/adsite-internship-recruitment-task/static/js/main.479f6e5d.js.map",
-    "488.778e2da9.chunk.js.map": "/adsite-internship-recruitment-task/static/js/488.778e2da9.chunk.js.map"
+    "main.css": "/cars-spot/static/css/main.3a15091e.css",
+    "main.js": "/cars-spot/static/js/main.b4b97617.js",
+    "static/js/488.778e2da9.chunk.js": "/cars-spot/static/js/488.778e2da9.chunk.js",
+    "static/media/main.png": "/cars-spot/static/media/main.c6aa481ac42751a1d1d0.png",
+    "static/media/gallery1.png": "/cars-spot/static/media/gallery1.b933f3e132dcc16a48e7.png",
+    "static/media/gallery2.png": "/cars-spot/static/media/gallery2.74c86e009a2a937ae8eb.png",
+    "static/media/gallery3.png": "/cars-spot/static/media/gallery3.0ab619de66eeb8da913a.png",
+    "static/media/lines.png": "/cars-spot/static/media/lines.273cce9ae51c91a4a58a.png",
+    "index.html": "/cars-spot/index.html",
+    "main.3a15091e.css.map": "/cars-spot/static/css/main.3a15091e.css.map",
+    "main.b4b97617.js.map": "/cars-spot/static/js/main.b4b97617.js.map",
+    "488.778e2da9.chunk.js.map": "/cars-spot/static/js/488.778e2da9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37ec51d5.css",
-    "static/js/main.479f6e5d.js"
+    "static/css/main.3a15091e.css",
+    "static/js/main.b4b97617.js"
   ]
 }
