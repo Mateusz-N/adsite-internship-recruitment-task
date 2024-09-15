@@ -12,8 +12,8 @@ module.exports = {
         "secondary": "#0147FF"
       },
       width: {
-        "container-width": "83.33%",
-        "gallery": "87.78%",
+        "container-width": "1200px",
+        "gallery": "1264px",
         "seo-article": "576px"
       },
       spacing: {
